@@ -45,8 +45,9 @@ public class Frogger {
 
     // TODO: Do you notice any issues here?
     public boolean isOccupied(int position) {
-        boolean[] occupied = this.road.getOccupied();
-        return occupied[position];
+        return this.road.isOccupied(position);
+        // boolean[] occupied = this.road.getOccupied();
+        // return occupied[position];
     }
     
     public boolean isValid(int position) {
